@@ -9,6 +9,18 @@
   Esempio
     Input: numero di gatti = 44, gatti per fila = 6
     Output: numero di file = 8, gatti mancanti = 4
-  Hint: Se vuoi usare l'arrotondamento ti consiglio di non usare Math.round (arrotonda all'intero superiore solo da .5 in su) ma utilizza Math.ceil (arrotonda sempre all'intero superiore).
+  Hint: Se vuoi usare l'arrotondamento ti consiglio di non usare Math.round
+  (arrotonda all'intero superiore solo da .5 in su)
+   ma utilizza Math.ceil (arrotonda sempre all'intero superiore).
   http://www.imparareaprogrammare.it
 */
+
+
+var gatti = 49;
+var file = 4;
+
+
+var nFile = Math.ceil(gatti/file);
+var mancanti = nFile * file - gatti;
+console.log(nFile);
+console.log(mancanti);
